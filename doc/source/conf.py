@@ -40,6 +40,20 @@ extensions = [
     'sphinxfortran.fortran_autodoc',
 ]
 
+## -- Options for Sphinx-Fortran ---------------------------------------------
+# List of possible extensions in the case of a directory listing
+fortran_ext = ['f90', 'F90', 'f95', 'F95']
+
+# This variable must be set with file pattern, like "*.f90", or a list of them.
+# It is also possible to specify a directory name; in this case, all files than
+# have an extension matching those define by the config variable `fortran_ext`
+# are used.
+fortran_src = [ os.path.abspath('../src/'),  ]
+
+# Indentation string or length (default 4). If it is an integer,
+# indicates the number of spaces.
+fortran_indent = 2
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
@@ -60,8 +74,8 @@ from setup import author, version
 del sys.path[0]
 
 # General information about the project.
-project = u'SphinxFortran'
-copyright = u'2010-2015, Actimar/IFREMER'
+project = u'ESM/RISM in QE'
+copyright = u'2022, Minoru Otani'
 #author = u'Stephane Raynaud for Actimar/IFREMER '
 
 # The version info for the project you're documenting, acts as replacement for
@@ -69,7 +83,7 @@ copyright = u'2010-2015, Actimar/IFREMER'
 # built documents.
 #
 # The short X.Y version.
-version = '1.0'
+version = '0.1'
 # The full version, including alpha/beta/rc tags.
 release = '1.0'
 

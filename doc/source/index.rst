@@ -1,17 +1,16 @@
-Documentation of fortran extensions to Sphinx
+Documentation of ESM/RISM in QE
 =============================================
-
-.. include:: ../../README.rst
-    :start-line: 2
 
 Contents:
 
 .. toctree::
     :maxdepth: 2
 
-    user
-    lib
-   
+    esm
+    fcp
+    1d-rism
+    3d-rism
+    laue-rism
 
 Indices and tables
 ------------------
